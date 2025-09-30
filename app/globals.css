@@ -1,17 +1,31 @@
+/* global.css */
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* === Tokens/Design system === */
+@theme {
+  /* colors -> se convierten en utilidades bg-*, text-* */
+  --color-secondary: #f5741c; /* text-secondary, bg-secondary, border-secondary */
+  --color-dark-bg:  #131424;  /* bg-dark-bg, text-dark-bg, etc. */
+
+  /* backgroundImage -> se convierte en bg-gradient-cover */
+  --background-image-gradient-cover: 
+    linear-gradient(
+      90.21deg,
+      rgba(170, 54, 124, 0.5) -5.91%,
+      rgba(74, 47, 189, 0.5) 111.58%
+    );
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+/* (Opcional) variables de tema propias para usar en CSS puro */
+:root {
+  --background: #f5741c;
+  --foreground: #131424;
+  /* fuentes si usas variables */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
+/* Modo oscuro por media query (puedes usar .dark también) */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
