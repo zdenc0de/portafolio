@@ -1,5 +1,4 @@
 import { CoverParticles } from "@/components/cover-particles";
-import Image from "next/image";
 import { TransitionPage } from "@/components/transition-page";
 
 export default function Home() {
