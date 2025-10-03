@@ -20,7 +20,7 @@ export const TimeLine = () => {
                 after:translate-y-1.5">
               <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">{data.date}</time>
               <p className="text-xl font-bold text-gray-400">{data.subtitle}</p>
-              <p className="text-slate-400">{data.description}</p>
+              <p className="text-slate-400 max-w-md">{data.description}</p>
             </div>
           </div>
         ))}
