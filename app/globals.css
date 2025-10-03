@@ -38,10 +38,3 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ⛔️ QUITAR altura fija: esto rompía mobile */
-/* 
-main {
-  height: 100vh;
-  height: 100dvh;
-}
-*/
