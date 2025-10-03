@@ -1,12 +1,17 @@
 import { ContainerPage } from "@/components/container";
 import { TransitionPage } from "@/components/transition-page";
+import { Avatar } from "@/components/avatar";
 
 export default function PageAboutMe() {
   return (
     <>
         <TransitionPage />
         <ContainerPage>
-            <p>About Me</p>
+            <Avatar />
+            <h1 className="text-2xl leading-thight text-center md:text-left md:text-5xl md:mt-10">
+                Toda mi {''}
+                <span className="font-bold text-secondary">trayectoria académica</span>
+            </h1>
         </ContainerPage>
     </>
   )

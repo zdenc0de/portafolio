@@ -1,11 +1,11 @@
 interface ContainerProps {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }
-export const ContainerPage = (props: ContainerProps) => {
-    const { children } = props;
+
+export const ContainerPage = ({ children }: ContainerProps) => {
   return (
-    <div className="w-full max-w-6xl px-4 pb-40 mx-auto mt-40 md:pb-0 md:px-6">
-        {children}
+    <div className="relative mx-auto mt-40 w-full max-w-6xl px-4 md:px-6 min-h-[600px] md:min-h-screen">
+      {children}
     </div>
-  )
-}
+  );
+};

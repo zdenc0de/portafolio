@@ -8,7 +8,7 @@ export const Header = () => {
   return (
     <MotionTransition
       position="bottom"
-      className="pointer-events-none absolute top-5 z-40 inline-block w-full md:top-10"
+      className="pointer-events-none absolute top-5 z-40 inline-block w-full md:top-10 px-20"
     >
       <header className="pointer-events-auto">
         <div className="mx-auto flex max-w-6xl justify-between px-4 md:flex">
