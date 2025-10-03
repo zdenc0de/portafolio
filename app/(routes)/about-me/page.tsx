@@ -2,6 +2,7 @@ import { ContainerPage } from "@/components/container";
 import { TransitionPage } from "@/components/transition-page";
 import { Avatar } from "@/components/avatar";
 import { CounterServices } from "@/components/counter-services";
+import { TimeLine } from "@/components/time-line";
 
 export default function PageAboutMe() {
   return (
@@ -14,6 +15,8 @@ export default function PageAboutMe() {
                 <span className="font-bold text-secondary">trayectoria académica</span>
             </h1>
             <CounterServices />
+
+            <TimeLine />
         </ContainerPage>
     </>
   )
