@@ -29,7 +29,7 @@ export const Introduction = () => {
                 "xd",
                 1000,
                 "alo",
-                100,
+                1000,
               ]}
               wrapper="span"
               speed={50}
