@@ -8,14 +8,38 @@ export const Header = () => {
   return (
     <MotionTransition
       position="bottom"
-      className="pointer-events-none absolute top-5 z-40 inline-block w-full md:top-10 px-20"
+      className="absolute top-5 z-40 inline-block w-full px-4 md:top-10 md:px-20"
     >
       <header className="pointer-events-auto">
-        <div className="mx-auto flex max-w-6xl justify-between px-4 md:flex">
+        <div className="container mx-auto flex max-w-6xl items-center justify-between">
           <Link href="/">
-            <h1 className="my-3 text-center text-4xl font-bold md:text-left">
-              Zden<span className="text-secondary">code</span>
+            
+            <h1 
+              className="my-3 text-6xl font-bold md:text-5xl transition-all duration-300 hover:scale-110 hover:rotate-[-2deg]"
+              // Apply the custom font via the CSS variable we created
+              style={{ fontFamily: 'var(--font-luckiest-guy)' }}
+            >
+              <span
+                className="text-white"
+                // This is the trick: we use multiple text shadows to create a stroke and a drop shadow
+                style={{
+                  textShadow: 
+                    '2px 2px 0px #F5741C, -2px -2px 0px #F5741C, 2px -2px 0px #F5741C, -2px 2px 0px #F5741C, 4px 4px 0px #000'
+                }}
+              >
+                Zden
+              </span>
+              <span 
+                className="text-black"
+                style={{
+                  textShadow: 
+                    '2px 2px 0px #F5741C, -2px -2px 0px #F5741C, 2px -2px 0px #F5741C, -2px 2px 0px #F5741C, 0 0 0px #000'
+                }}
+              >
+                code
+              </span>
             </h1>
+           
           </Link>
 
           <div className="flex items-center justify-center gap-7">
