@@ -6,7 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 
 export const Introduction = () => {
   return (
-    <section className="w-full bg-dark-bg/60 pb-28 md:pb-0">
+    <section className="w-full pb-28 md:pb-0">
       <div className="z-20 grid h-full items-center p-6 py-20 md:grid-cols-2 md:py-0">
         <Image
           src="/home-4.png" // asegúrate que exista en /public

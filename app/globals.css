@@ -4,30 +4,28 @@
 /* === Tokens/Design system === */
 @theme {
   /* colores -> utilidades: bg-*, text-*, border-* */
-  --color-secondary: #f5741c; /* text-secondary, bg-secondary, border-secondary */
-  --color-dark-bg:  #131424;  /* bg-dark-bg, text-dark-bg, etc. */
+  --color-primary:    #1F3FC3; /* Nuevo: Cobalt Blue */
+  --color-secondary:  #EFEFD7; /* Nuevo: Light Cream */
+  --color-accent:     #f5741c; /* Mantenemos el naranja como color de acento */
+  --color-dark-bg:    #131424; /* bg-dark-bg, text-dark-bg, etc. */
 
   /* fondo -> utilidad: bg-gradient-cover */
-  --background-image-gradient-cover:
-    linear-gradient(
-      90.21deg,
-      rgba(170, 54, 124, 0.5) -5.91%,
-      rgba(74, 47, 189, 0.5) 111.58%
-    );
+  --bg-gradient-cover: linear-gradient(135deg, #1F3FC3 0%, #EFEFD7 100%);
 }
 
+/* Modo claro por defecto */
 :root {
-  --background: #f5741c;
-  --foreground: #131424;
+  --background: var(--color-secondary); /* Fondo Light Cream */
+  --foreground: var(--color-dark-bg);   /* Texto oscuro por defecto */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-/* Modo oscuro por media query (opcional) */
+/* Modo oscuro por media query */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #1f1934;
-    --foreground: #ededed;
+    --background: #0b135a;
+    --foreground: #EFEFD7;
   }
 }
 
@@ -37,8 +35,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/*
+  Actualizamos el color de la paginación del Swiper
+  para que use el nuevo color de acento o el primario.
+*/
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
-    background-color: #f5741c;
+    background-color: var(--color-primary); /* Paginación en Cobalt Blue */
   }

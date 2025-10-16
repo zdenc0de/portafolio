@@ -3,12 +3,14 @@ import { TransitionPage } from "@/components/transition-page";
 import { Avatar } from "@/components/avatar";
 import { CounterServices } from "@/components/counter-services";
 import { TimeLine } from "@/components/time-line";
+import { CoverParticles } from '../../../components/cover-particles';
 
 export default function PageAboutMe() {
   return (
     <>
         <TransitionPage />
         <ContainerPage>
+          <CoverParticles />
             <Avatar />
             <h1 className="text-2xl leading-thight text-center md:text-left md:text-5xl md:mt-10">
                 Toda mi {''}
@@ -17,7 +19,9 @@ export default function PageAboutMe() {
             <CounterServices />
 
             <TimeLine />
+          <CoverParticles />
         </ContainerPage>
+
     </>
   )
 }

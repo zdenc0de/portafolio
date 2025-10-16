@@ -6,11 +6,13 @@ import { TransitionPage } from "@/components/transition-page";
 import { dataTestimonials } from "@/data";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { CoverParticles } from "@/components/cover-particles";
 
 export default function TestimonialsPage() {
   return (
     <>
       <TransitionPage />
+      <CoverParticles />
       <div className="flex flex-col justify-center h-screen">
         <CircleImage />
         <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">

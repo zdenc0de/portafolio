@@ -1,6 +1,7 @@
 import { AvatarPortfolio } from "@/components/avatar-portfolio";
 import { CircleImage } from "@/components/circle-image";
 import { ContainerPage } from "@/components/container";
+import { CoverParticles } from "@/components/cover-particles";
 import { PortfolioBox } from "@/components/portfolio-box";
 import { TransitionPage } from "@/components/transition-page";
 import { dataPortfolio } from "@/data";
@@ -11,6 +12,7 @@ export default function PortfolioPage() {
       <TransitionPage />
       <AvatarPortfolio />
       <CircleImage />
+      <CoverParticles />
 
       <div className="flex flex-col justify-center h-full">
         <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">Mis ultimos 
